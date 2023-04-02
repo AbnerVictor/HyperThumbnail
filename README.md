@@ -4,8 +4,7 @@
 
 ## 🎏 Abstract
 
-<b>TL; DR: <font color="red">HyperThumbnail</font> is a real-time 6K rate-distortion-aware image rescaling.</b>
-
+HyperThumbnail is a real-time 6K rate-distortion-aware image rescaling.
 <details><summary>CLICK for the full abstract</summary>
 
 
