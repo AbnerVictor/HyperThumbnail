@@ -2,7 +2,7 @@
 
 [Chenyang Qi](https://chenyangqiqi.github.io/)$^\*$, [Xin Yang](https://www.linkedin.com/in/abnervictor/)$^\*$, [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
 
-<img src="task_overview.pdf">
+<img src="task_overview.jpg">
 
 ## 🎏 Abstract
 
