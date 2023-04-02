@@ -2,10 +2,9 @@
 
 [Chenyang Qi](https://chenyangqiqi.github.io/)$^\*$, [Xin Yang](https://www.linkedin.com/in/abnervictor/)$^\*$, [Ka Leong Cheng](https://felixcheng97.github.io/), [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
 
-&emsp;
 
 <div align=center>
-<img src="task_overview.jpg" weight="50%"/>  
+<img src="task_overview.jpg" width="70%"/>  
   
 The application of 6K image rescaling in the context of cloud photo storage on smartphones (e.g., iCloud). 
 </div>
