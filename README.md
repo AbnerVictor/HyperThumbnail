@@ -19,7 +19,7 @@ The application of 6K image rescaling in the context of cloud photo storage on s
 
 ## 🎏 Abstract
 
-HyperThumbnail is a real-time 6K framework for rate-distortion-aware image rescaling.
+HyperThumbnail is the first real-time 6K framework for rate-distortion-aware image rescaling.
 <details><summary>CLICK for the full abstract</summary>
 
 
