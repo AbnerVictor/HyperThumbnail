@@ -18,4 +18,4 @@ Our framework first embeds an HR image into a JPEG LR thumbnail by an encoder wi
 ## 🚧 Todo
 
 - [ ] Release the training and inference codes
-- [ ] Release the guidance documents for rescaling
+- [ ] Release the guidance documents for image rescaling and bitrate control
