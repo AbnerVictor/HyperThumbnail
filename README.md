@@ -4,7 +4,7 @@
 
 ## 🎏 Abstract
 
-HyperThumbnail is a real-time 6K rate-distortion-aware image rescaling.
+HyperThumbnail is a real-time 6K framework for rate-distortion-aware image rescaling.
 <details><summary>CLICK for the full abstract</summary>
 
 
