@@ -2,10 +2,19 @@
 
 [Chenyang Qi](https://chenyangqiqi.github.io/)$^\*$, [Xin Yang](https://www.linkedin.com/in/abnervictor/)$^\*$, [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
 
+&emsp;
 
 <div align=center>
-<img src="task_overview.jpg"/>
+<img src="task_overview.jpg"/>  
+  
+The application of 6K image rescaling in the context of cloud photo storage on smartphones (e.g., iCloud). 
 </div>
+
+<details><summary>CLICK for the full description</summary>
+
+> As more high-resolution (HR) images are uploaded to cloud storage nowadays, challenges are brought to cloud service providers (CSPs) in fulfilling latency-sensitive image reading requests (e.g., zoom-in) through the internet. To facilitate faster transmission and high-quality visual content, our HyperThumbnail framework helps CSPs to encode an HR image into an LR JPEG thumbnail, which users could cache locally. When the internet is unstable or unavailable, our method can still reconstruct a high-fidelity HR image from the JPEG thumbnail in real time.
+</details>
+
 
 
 ## 🎏 Abstract
