@@ -5,7 +5,7 @@
 &emsp;
 
 <div align=center>
-<img src="task_overview.pdf"/>  
+<img src="task_overview.jpg"/>  
   
 The application of 6K image rescaling in the context of cloud photo storage on smartphones (e.g., iCloud). 
 </div>
