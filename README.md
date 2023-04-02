@@ -2,6 +2,8 @@
 
 [Chenyang Qi](https://chenyangqiqi.github.io/)$^\*$, [Xin Yang](https://www.linkedin.com/in/abnervictor/)$^\*$, [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
 
+<img src="task_overview.pdf">
+
 ## 🎏 Abstract
 
 HyperThumbnail is a real-time 6K framework for rate-distortion-aware image rescaling.
