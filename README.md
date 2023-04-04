@@ -2,6 +2,8 @@
 
 [Chenyang Qi](https://chenyangqiqi.github.io/)$^\*$, [Xin Yang](https://www.linkedin.com/in/abnervictor/)$^\*$, [Ka Leong Cheng](https://felixcheng97.github.io/), [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
 
+<a href='https://arxiv.org/abs/2304.01064'><img src='https://img.shields.io/badge/ArXiv-2304.01064-red'></a> 
+
 
 <div align=center>
 <img src="task_overview.jpg" width="70%"/>  
