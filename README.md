@@ -71,15 +71,15 @@ We provide a `4x` rescaling testing config in the `options/test/4x/HyperThumbnai
 python ./run_test.py -opt ./options/test/4x/HyperThumbnail_4x_test.yml
 ```
 
-And our pretrained checkpoint for 4x rescaling can be downloaded [here](https://hkustconnect-my.sharepoint.com/:u:/g/personal/xyangbk_connect_ust_hk/EcAaTY1MS0FLvfI7_0ex4tABlr88_kZFAUJuipc2NX8WwA?e=Co37eJ). 
+You can download example images [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/xyangbk_connect_ust_hk/EsGbMWqa2hxAtA8hBqJXo4MB3cIgKX2BZsLvKLge3i2kwg?e=wMzZNZ) and our pretrained checkpoint for 4x rescaling [here](https://hkustconnect-my.sharepoint.com/:u:/g/personal/xyangbk_connect_ust_hk/EcAaTY1MS0FLvfI7_0ex4tABlr88_kZFAUJuipc2NX8WwA?e=Co37eJ). 
 
 
 ## Export the jpeg HyperThumbnail
 
-
+To export `.jpg` HyperThumbnail, you should install the [TorchJPEG (Ehrlich et al.)](https://gitlab.com/Queuecumber/torchjpeg/-/tree/master/) package. 
 
 ## Acknowledgement
 
 - We build our training and testing code base on the [BaiscSR](https://github.com/XPixelGroup/BasicSR) toolbox. We are truely grateful for their outstanding works and contributions to the field. 
-- We thank [TorchJPEG (Ehrlich et al.)](https://gitlab.com/Queuecumber/torchjpeg/-/tree/master/) for the JPEG extension for pytorch that interfaces with libjpeg to allow for manipulation of low-level JPEG data.
+- We thank [TorchJPEG](https://gitlab.com/Queuecumber/torchjpeg/-/tree/master/) for the JPEG extension for pytorch that interfaces with libjpeg to allow for manipulation of low-level JPEG data.
 - We thank [CompressAI](https://github.com/InterDigitalInc/CompressAI) for the implementation of Entropy Model.
