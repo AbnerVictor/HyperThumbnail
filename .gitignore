@@ -3,7 +3,7 @@ tb_logger/*
 *__pycache__
 /results/*
 /experiments/*
-/checkpoint/*
+/checkpoints/*
 trash
 wandb
 /datasets/*
