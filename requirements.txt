@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cu113
 compressai==1.2.4
 torch==1.11.0
 tqdm==4.65.0
+lpips

@@ -1,5 +1,5 @@
 # CMD:
-# CUDA_VISIBLE_DEVICES=6 python run_test.py -opt ./options/test/ablation/1013_f24_4x_2e2.yml
+# CUDA_VISIBLE_DEVICES=0 python run_test.py -opt options/test/4x/HyperThumbnail_4x_test.yml
 
 # general settings
 name: HyperThumbnail_4x_f24_2e-2
@@ -56,7 +56,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: /home/user/yangxin/hdd_workspace/fast_rescaling/HyperThumbnail/checkpoints/HyperThumbnail_4x_net_g_latest.pth
+  pretrain_network_g: ./checkpoints/HyperThumbnail_4x_net_g_latest.pth
   strict_load_g: true
   resume_state: ~
 

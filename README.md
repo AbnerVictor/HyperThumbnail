@@ -48,6 +48,7 @@ And please install our modified version of [BaiscSR (Wang et al.)](https://githu
 
 ```
 cd ./BasicSR
+pip install -r ./requirements.txt
 python setup.py develop
 ```
 
@@ -71,8 +72,13 @@ We provide a `4x` rescaling testing config in the `options/test/4x/HyperThumbnai
 python ./run_test.py -opt ./options/test/4x/HyperThumbnail_4x_test.yml
 ```
 
-You can download example images [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/xyangbk_connect_ust_hk/EsGbMWqa2hxAtA8hBqJXo4MB3cIgKX2BZsLvKLge3i2kwg?e=wMzZNZ) and our pretrained checkpoint for 4x rescaling [here](https://hkustconnect-my.sharepoint.com/:u:/g/personal/xyangbk_connect_ust_hk/EcAaTY1MS0FLvfI7_0ex4tABlr88_kZFAUJuipc2NX8WwA?e=Co37eJ). 
+You can download example images [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/xyangbk_connect_ust_hk/EsGbMWqa2hxAtA8hBqJXo4MB3cIgKX2BZsLvKLge3i2kwg?e=wMzZNZ) and our pretrained checkpoint for 4x rescaling [here](https://hkustconnect-my.sharepoint.com/:u:/g/personal/xyangbk_connect_ust_hk/EcAaTY1MS0FLvfI7_0ex4tABlr88_kZFAUJuipc2NX8WwA?e=Co37eJ) using bash command 
 
+<!-- <details><summary>CLICK for the bash command using github release</summary> -->
+```
+bash download.sh
+```
+<!-- <details> -->
 
 ## Export the jpeg HyperThumbnail
 

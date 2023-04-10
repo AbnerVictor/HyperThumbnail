@@ -690,16 +690,16 @@ class HyperThumbnail_Model(SRModel):
             log_str += f'\t # bpp_degrad_lq: {bpp:.4f}\n'
         logger = get_root_logger()
         logger.info(log_str)
-        import pandas as pd
+        # import pandas as pd
         
-        df_dict = {'name': self.metric_all_dict['image_name']}
-        for sub_img in self.metric_all_dict:
-            if isinstance(self.metric_all_dict[sub_img], dict):
-                for metric in self.metric_all_dict[sub_img]:
-                    df_dict[f'{sub_img}_{metric}'] = self.metric_all_dict[sub_img][metric]
-        df = pd.DataFrame.from_dict(df_dict)
-        csv_path = logger.handlers[1].baseFilename.replace(".log", ".csv")
-        df.to_csv(csv_path)
+        # df_dict = {'name': self.metric_all_dict['image_name']}
+        # for sub_img in self.metric_all_dict:
+        #     if isinstance(self.metric_all_dict[sub_img], dict):
+        #         for metric in self.metric_all_dict[sub_img]:
+        #             df_dict[f'{sub_img}_{metric}'] = self.metric_all_dict[sub_img][metric]
+        # df = pd.DataFrame.from_dict(df_dict)
+        # csv_path = logger.handlers[1].baseFilename.replace(".log", ".csv")
+        # df.to_csv(csv_path)
         
         if tb_logger:
             tb_logger.add_scalar('lr', self.optimizer_g.param_groups[0]['lr'], current_iter)
