@@ -54,8 +54,8 @@ python setup.py develop
 
 
 ## Training
-You may prepare DIV2K and Set14 datasets following [docs](BasicSR/docs/DatasetPreparation.md)
-We provide a `4x` rescaling training config in the `options/train/4x/HyperThumbnail_4x.yml`. You can start the training by:
+You may prepare DIV2K and Set14 datasets following [docs](BasicSR/docs/DatasetPreparation.md).
+Then start the `4x` rescaling training using the config in the `options/train/4x/HyperThumbnail_4x.yml`.
 
 ```
 python ./run.py -opt ./options/train/4x/HyperThumbnail_4x.yml
