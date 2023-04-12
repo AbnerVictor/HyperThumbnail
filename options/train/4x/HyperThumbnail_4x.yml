@@ -10,8 +10,8 @@ datasets:
   train:
     name: DIV2K
     type: PairedImageDataset
-    dataroot_gt: datasets/Classic/DIV2K/HR/DIV2K_train_HR_sub
-    dataroot_lq: datasets/Classic/DIV2K/LR/DIV2K_train_LR_bicubic/X4_sub
+    dataroot_gt: datasets/demo_dataset/kodak/GTmod12
+    dataroot_lq: datasets/demo_dataset/kodak/LRbicx4
     filename_tmpl: '{}'
     io_backend:
       type: disk
@@ -30,8 +30,8 @@ datasets:
   val:
     name: Set14
     type: PairedImageDataset
-    dataroot_gt: datasets/Classic/Set14/GTmod12
-    dataroot_lq: datasets/Classic/Set14/LRbicx4
+    dataroot_gt: datasets/demo_dataset/Set5/GTmod12
+    dataroot_lq: datasets/demo_dataset/Set5/LRbicx4
     io_backend:
       type: disk
     crop_val: true
