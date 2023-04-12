@@ -1,0 +1,112 @@
+# CMD:
+# CUDA_VISIBLE_DEVICES=0 python run_test.py -opt options/test/4x/HyperThumbnail_4x_test.yml
+
+# general settings
+name: HyperThumbnail_4x_f24_2e-2
+model_type: HyperThumbnail_Model
+scale: 4
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 10
+
+# dataset and data loader settings
+datasets:
+  val:
+    name: Set14
+    type: PairedImageDataset
+    dataroot_gt: datasets/example/GT
+    dataroot_lq: datasets/example/LRbicx4
+    filename_tmpl: '{}_x4'
+    io_backend:
+      type: disk
+    crop_val: false
+    # batch_size_per_gpu: 8 # uncomment this line when crop_val is true    
+
+# network structures
+network_g:
+  type: HyperThumbnail
+  scale: 4
+  patch_size: 256
+  norm: none
+  quant_type: bypass
+  predict_quant_table: true
+  pool_type: avg
+  chroma_sub: false
+  is_train: false
+
+  decoder_opt:
+    num_in_ch: 27
+    num_out_ch: 3
+    num_feat: 24
+    num_block: 16
+    upscale: 4
+    res_scale: 1
+    img_range: 1.0
+    rgb_mean: [0.4488, 0.4371, 0.4040]    
+    input_norm: False
+
+  coe_decoder_opt:
+    num_in_ch: 192
+    num_out_ch: 24
+    num_feat: 24
+    num_block: 16
+    upscale: 8
+    res_scale: 1
+    out_range: 10.0
+    mean: None
+
+# path
+path:
+  pretrain_network_g: ./checkpoints/HyperThumbnail_4x_net_g_latest.pth
+  strict_load_g: true
+  resume_state: ~
+
+# training settings
+train: 
+  opts: ~
+
+# validation settings
+val:
+  val_freq: !!float 5e3
+  save_img: true
+  save_jpeg: true # not supported when crop_val is true
+  val_scaled_lq: true
+  val_scaled_degrad_lq: true
+  patch_mod: 256
+
+  metrics:
+    psnr_y: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: true
+      strict_shape: False
+    psnr_rgb: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: false
+      strict_shape: False
+    lpips_rgb: # metric name, can be arbitrary
+      type: calculate_lpips
+      crop_border: 2
+      test_y_channel: False
+      strict_shape: False
+    lpips_y: # metric name, can be arbitrary
+      type: calculate_lpips
+      crop_border: 2
+      test_y_channel: True
+      strict_shape: False
+
+# logging settings
+logger:
+  print_freq: 100
+  use_tb_logger: true
+  wandb:
+    project: ~
+    resume_id: ~
+
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29500
+
+# CUDA_VISIBLE_DEVICES=8,9 python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 ./run_sever3.py -opt ./options/train/train_RescalingNet_V3_wo_degrad_chn_attn_gradient_clip.yml --debug --launcher pytorch
+# OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=2 python ./run_server7.py -opt ./options/train/ybrdecoder/0417_0217_RescalingNet_V8_DIV2K_300k_P256_B32_Q90_full_dsp_ybrdecoder_norm128_bm_pass_new_basicsr_fix_RescaleNet_V8_quant.yml

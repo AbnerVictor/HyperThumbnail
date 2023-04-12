@@ -1,0 +1,34 @@
+/.idea/
+tb_logger/*
+*__pycache__
+/results/*
+/experiments/*
+/checkpoints/*
+trash
+wandb
+/datasets/*
+
+# Log
+*.log
+*.csv
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.pyc
+*TestData*
+
+*.egg-info
+*.EGG-INFO
+*build
+
+*.vscode
+**.engine
+**.npy
+*.png
+*.jpg
+
+!/docs/*
