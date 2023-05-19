@@ -1,9 +1,8 @@
-# [CVPR 2023] HyperThumbnail: Real-time 6K Image Rescaling with Rate-distortion Optimization
+# [CVPR 2023] Real-time 6K Image Rescaling with Rate-distortion Optimization
 
-[Chenyang Qi](https://chenyangqiqi.github.io/)$^\*$, [Xin Yang](https://www.linkedin.com/in/abnervictor/)$^\*$, [Ka Leong Cheng](https://felixcheng97.github.io/), [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
+[Chenyang Qi](https://chenyangqiqi.github.io/)\*, [Xin Yang](https://www.linkedin.com/in/abnervictor/)\*, [Ka Leong Cheng](https://felixcheng97.github.io/), [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
 
 <a href='https://arxiv.org/abs/2304.01064'><img src='https://img.shields.io/badge/ArXiv-2304.01064-red'></a> 
-
 
 <div align=center>
 <img src="docs/task_overview.jpg" width="70%"/>  
@@ -15,6 +14,7 @@ The application of 6K image rescaling in the context of cloud photo storage on s
 
 > As more high-resolution (HR) images are uploaded to cloud storage nowadays, challenges are brought to cloud service providers (CSPs) in fulfilling latency-sensitive image reading requests (e.g., zoom-in) through the internet. To facilitate faster transmission and high-quality visual content, our HyperThumbnail framework helps CSPs to encode an HR image into an LR JPEG thumbnail, which users could cache locally. When the internet is unstable or unavailable, our method can still reconstruct a high-fidelity HR image from the JPEG thumbnail in real time.
 </details>
+
 
 
 
@@ -84,6 +84,17 @@ python ./run_test.py -opt ./options/test/4x/HyperThumbnail_4x_test.yml
 ## Export the jpeg HyperThumbnail
 
 To export `.jpg` HyperThumbnail, you should install the [TorchJPEG (Ehrlich et al.)](https://gitlab.com/Queuecumber/torchjpeg/-/tree/master/) package. 
+
+## 📍 Citation 
+
+```
+@inproceedings{qi2023hyperthumbnail,
+    author    = {Qi, Chenyang and Yang, Xin and Cheng, Ka Leong and Chen, Ying-Cong and Chen, Qifeng},
+    title     = {Real-Time 6K Image Rescaling With Rate-Distortion Optimization},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2023},
+}
+```
 
 ## Acknowledgement
 
