@@ -1,6 +1,6 @@
 # [CVPR 2023] Real-time 6K Image Rescaling with Rate-distortion Optimization
 
-[Chenyang Qi](https://chenyangqiqi.github.io/)\*, [Xin Yang](https://abnervictor.github.io/2020/06/12/Academic-Self-Intro.html)\*, [Ka Leong Cheng](https://felixcheng97.github.io/), [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
+[Chenyang Qi](https://chenyangqiqi.github.io/)\*, [Xin Yang](https://abnervictor.github.io/2023/06/12/Academic-Self-Intro.html)\*, [Ka Leong Cheng](https://felixcheng97.github.io/), [Yingcong Chen](https://www.yingcong.me), and [Qifeng Chen](https://cqf.io)
 
 <a href='https://arxiv.org/abs/2304.01064'><img src='https://img.shields.io/badge/ArXiv-2304.01064-red'></a> 
 
